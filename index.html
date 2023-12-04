@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="pt-br" data-bs-theme="auto">
 
 <head>
   <script src="../assets/js/color-modes.js"></script>
@@ -20,6 +20,11 @@
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
+    @font-face {
+      font-family: Cottage;
+      src: url(/assets/fonts/The\ Cottage.otf);
+    }
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -61,7 +66,12 @@
       width: 1.5rem;
       height: 100vh;
     }
-
+    .form-control {
+      color: #2e2e2e;
+    }
+    .form-control::placeholder {
+      color: #2e2e2e;
+    }
     .bi {
       vertical-align: -.125em;
       fill: currentColor;
@@ -109,6 +119,8 @@
     .bd-mode-toggle .dropdown-menu .active .bi {
       display: block !important;
     }
+   
+
   </style>
 
 
@@ -116,11 +128,11 @@
 
 <body>
 
-  <header data-bs-theme="dark">
+  <header data-bs-theme="dark" class="fixed-top bg-light shadow">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+    <nav class="navbar navbar-light navbar-expand-lg">
       <div class="container-xl">
-        <a class="navbar-brand" href="#">Duhance</a>
+        <a class="navbar-brand text-dark" style="font-family: Cottage; font-size: 24pt; margin-right: 4%;" href="#">Duhance</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
           aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -129,24 +141,25 @@
         <div class="collapse navbar-collapse" id="navbarsExample07XL">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">For you</a>
+              <a class="nav-link active text-dark" style="font-weight: bold; font-size: 14pt;" aria-current="page" href="#">For
+                you</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Discover</a>
+              <a class="nav-link text-dark" href="#" style="font-weight: bold; font-size: 14pt;">Discover</a>
             </li>
           </ul>
           <form role="search">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control bg-light" type="search" placeholder="Search" aria-label="Search">
           </form>
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <button class="btn bg-light mx-2 border border-primary"><a href="#" style="color: #000; text-decoration: none;">Search</a></button>
             </li>
+            <li class="nav-item">
+              <button class="btn mx-2">Login</button>
+            </li>
+          </ul>
+          </li>
           </ul>
         </div>
       </div>
@@ -268,10 +281,15 @@
               <img src="images/post6.jpg" width="100%" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
               <div class="card-body">
-                <p class="card-text">K-pop girl group 'aespa' has released their third mini-album 'MY WORLD'. I worked with SM Entertainment and created 3D content for aespa. The visual concept of this album is strange phenomenon in reality, and I participated in the production of 3D logos, album jackets, and 'SPICY' music video.</p>
+                <p class="card-text">K-pop girl group 'aespa' has released their third mini-album 'MY WORLD'. I worked
+                  with SM Entertainment and created 3D content for aespa. The visual concept of this album is strange
+                  phenomenon in reality, and I participated in the production of 3D logos, album jackets, and 'SPICY'
+                  music video.</p>
                 <div class="d-flex justify-content-between align-items-center flex-column">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a style="color:#2e2e2e; text-decoration:none;" href="https://www.behance.net/soohwan_art">Soohwan Oh</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        style="color:#2e2e2e; text-decoration:none;" href="https://www.behance.net/soohwan_art">Soohwan
+                        Oh</a></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
                   </div>
                   <small class="text-body-secondary">15 hours ago</small>
@@ -282,13 +300,18 @@
 
           <div class="col d-flex">
             <div class="card shadow-sm">
-              <img src="images/post7.jpg" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+              <img src="images/post7.jpg" width="100%" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
               <div class="card-body">
-                <p class="card-text">"With a keen eye on the fine details, the team at bld studio create, build, and design. The Denver-based studio provides high-quality built spaces, fabrication, and construction. After doing all of this work under a singular umbrella of Raw Creative, which started as a fabricator, they saw the need to divide and conquer". </p>
+                <p class="card-text">"With a keen eye on the fine details, the team at bld studio create, build, and
+                  design. The Denver-based studio provides high-quality built spaces, fabrication, and construction.
+                  After doing all of this work under a singular umbrella of Raw Creative, which started as a fabricator,
+                  they saw the need to divide and conquer". </p>
                 <div class="d-flex justify-content-between align-items-center flex-column">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a style="color:#2e2e2e; text-decoration:none;" href="https://www.behance.net/ladue">Travis Ladue</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        style="color:#2e2e2e; text-decoration:none;" href="https://www.behance.net/ladue">Travis
+                        Ladue</a></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
                   </div>
                   <small class="text-body-secondary">19 hours ago</small>
@@ -308,7 +331,9 @@
                   "</p>
                 <div class="d-flex justify-content-between align-items-center flex-column">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a style="color:#2e2e2e; text-decoration:none;" href="https://www.behance.net/polinawashington">Polina Washington</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        style="color:#2e2e2e; text-decoration:none;"
+                        href="https://www.behance.net/polinawashington">Polina Washington</a></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
                   </div>
                   <small class="text-body-secondary">22 hours ago</small>
@@ -321,10 +346,14 @@
               <img src="images/post9.jpg" width="100%" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
               <div class="card-body">
-                <p class="card-text">"VOA Collective reached out to us for an exciting mission, to create a series of mesmerizing CGI films for the launch campaign of their cosmic new collection, inspired by the enigmatic beauty of outer space and the Orion constellations."</p>
+                <p class="card-text">"VOA Collective reached out to us for an exciting mission, to create a series of
+                  mesmerizing CGI films for the launch campaign of their cosmic new collection, inspired by the
+                  enigmatic beauty of outer space and the Orion constellations."</p>
                 <div class="d-flex justify-content-between align-items-center flex-column">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a style="color:#2e2e2e; text-decoration:none;" href="https://www.behance.net/playful">Pablo Alfieri</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        style="color:#2e2e2e; text-decoration:none;" href="https://www.behance.net/playful">Pablo
+                        Alfieri</a></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
                   </div>
                   <small class="text-body-secondary">1 day ago</small>
@@ -338,14 +367,14 @@
 
   </main>
 
-  <footer  data-bs-theme="dark" class="py-5 bg-dark text-light">
+  <span class="wadaweu"></span>
+  <footer data-bs-theme="light" class="py-5 bg-light text-dark border-top border-black-50">
     <div class="container">
       <p class="float-end mb-1">
         <a href="#">Back to top</a>
       </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-          href="../getting-started/introduction/">getting started guide</a>.</p>
+      <p class="mb-1">This site was made for educational purpouses only; Made by <a href="https://www.github.com/efrnds">Efrnds</a> feel free to leave a follow!</p>
+      
     </div>
   </footer>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
